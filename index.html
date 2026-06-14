@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKED</title>
+    <style>
+        * { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(#0a0208, #1a0a1f);
+            color: #ff2a00;
+            font-family: 'Georgia', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .scene {
+            position: relative;
+            text-align: center;
+        }
+        
+        .skull {
+            width: 220px;
+            aspect-ratio: 0.9;
+            background: radial-gradient(circle at 34% 43%, #120b16 0 12%, transparent 12.5%), 
+                        radial-gradient(circle at 66% 43%, #120b16 0 12%, transparent 12.5%), 
+                        linear-gradient(#ffe8b0 0 65%, #d8a060 65% 100%);
+            border-radius: 48% 48% 38% 38%;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+            margin: 0 auto 2rem;
+        }
+        
+        .skull::before, .skull::after {
+            content: "";
+            position: absolute;
+            bottom: 8%;
+            width: 6px;
+            height: 22%;
+            background: #3a1f0f;
+            border-radius: 50%;
+        }
+        .skull::before { left: 32%; }
+        .skull::after { right: 32%; }
+        
+        h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: 0.08em;
+            animation: flicker 1.5s infinite alternate;
+        }
+        
+        @keyframes flicker {
+            0% { opacity: 0.9; }
+            100% { opacity: 1; }
+        }
+        
+        .info {
+            margin-top: 2rem;
+            color: #ddd;
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="skull"></div>
+        <h1>HACKED by Karan And Shlok</h1>
+        <div class="info">Subdomain Takeover • Proof of Concept</div>
+    </div>
+</body>
+</html>
